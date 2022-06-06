@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+
+    <!-- link to javaScript -->
+    <script defer src="./script.js"></script>
+    
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="./style.css"
+
+    <!-- Link to bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+  <!-- <h1>Application Form</h1> -->
+  <header>
+    <h1 id="header" style="color: green;">Application form</h1>
+    <hr style="width: 95%;">
+  </header>
+  <container id = "container1">
+    <form id="create_form" action="result.html" method="GET">
+
+      <div class="form-group">
+      <label>Username</label>
+      <input type="text" class="form-control" placeholder="username" id="username" name="user_name" required></div>
+
+      <div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control" placeholder="password" id="password"  name="user_password" required>
+      <small id="passwordHelpBlock" class="form-text text-muted">
+        Your password must be 9 or more characters long.
+      </div>
+
+      <div class="form-row">
+      <div class="form-group col-md-6">
+      <label>Email</label>
+      <input type="email" class="form-control"placeholder="example@email.com" id="email" name="user_email" >
+      </div>
+      <div class="form-group col-md-6">
+      <label>Birthdate</label>
+      <input type="date" class="form-control"  placeholder="birthdate" id="birthday" name="user_birthday">
+      </div>
+      </div>
+
+      <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Zodiac Sign</label>
+      <select class="custom-select my-1 mr-sm-2" id ="sign" name="sign">
+        <option selected>Choose...</option>
+        <option value="Aries">Aries</option>
+        <option value="Taurus">Taurus</option>
+        <option value="Gemini">Gemini</option>
+        <option value="Cancer">Cancer</option>
+        <option value="Leo">Leo</option>
+        <option value="Virgo">Virgo</option>
+        <option value="Libra">Libra</option>
+        <option value="Scorpio">Scorpio</option>
+        <option value="Sagittarius">Sagittarius</option>
+        <option value="Capricorn">Capricorn</option>
+        <option value="Aquarius">Aquarius</option>
+        <option value="Pisces">Pisces</option>
+      </select>
+    
+      <div class="custom-control custom-checkbox my-1 mr-sm-2">
+        <input type="checkbox" class="custom-control-input" id="customControlInline" name="check_box">
+        <label class="custom-control-label" for="customControlInline">Remember password</label>
+      </div>
+
+     <!-- <button type="submit" class="btn btn-primary my-1">Submit</button> -->
+      <div class="row">
+      <div class="col-md-12">
+
+          <!-- <button type="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" name="submit" value="Submit Form"> -->
+          <button type="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" name="btnn"><i class="fa fa-lock"></i>Submit form</button>
+      </div>
+      </div>
+    </form>
+  </container>
+
+  <footer>
+    <hr style="width: 95%;">
+    <p id="footer"><strong>No trees were harmed in the creation of this form.</strong></p>
+  </footer>
+</body>
+</html>

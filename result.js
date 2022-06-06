@@ -1,0 +1,1 @@
+document.getElementById("hder").style.textAlign = "center";
